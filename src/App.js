@@ -1,25 +1,25 @@
-import logo from './logo.svg';
+import {
+  BrowserRouter as Router,
+  Route,
+  Routes,
+} from 'react-router-dom';
+import SideNavbar from "./components/SideNavbar/SideNavbar";
+import {NAV_ITEMS} from "./configurations/navItems";
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+export const App = () => (
+  <div className="app">
+    <Router>
+      <SideNavbar />
+      <main>
+        <Routes>
+          {NAV_ITEMS.map(({path, element}) =>
+            <Route key={path} path={path} element={element} />
+          )}
+        </Routes>
+      </main>
+    </Router>
+  </div>
+);
 
 export default App;

@@ -1,0 +1,19 @@
+.filter-switch-line {
+  &__filter {
+    padding-bottom: 2px;
+    font-size: 20px;
+    color: black;
+    margin-right: 40px;
+    cursor: pointer;
+  }
+
+  &__filter:nth-child(2) {
+    margin-right: 100px;
+  }
+}
+
+.filter_active {
+  border-bottom: 3px solid #203AEB;
+  border-bottom-left-radius: 1px;
+  border-bottom-right-radius: 1px;
+}

@@ -1,0 +1,27 @@
+.side-navbar__item {
+  cursor: pointer;
+}
+
+.item {
+  &__selection-block {
+    display: flex;
+    width: 100px;
+    height: 40px;
+    text-align: center;
+    padding-left: 20px;
+    border-radius: 0 10px 10px 0;
+  }
+}
+
+.selection-block__link {
+  color: black;
+  font-size: 12px;
+  text-decoration: none;
+  margin-top: auto;
+  margin-bottom: auto;
+  line-height: 12px;
+}
+
+.navbar-item_active {
+  background: #FFFFFF;
+}

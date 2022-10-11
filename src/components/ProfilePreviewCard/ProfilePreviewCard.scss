@@ -1,0 +1,11 @@
+.profile-preview-card {
+  height: 150px;
+  display: inline-flex;
+  justify-content: left;
+
+  &__avatar {
+    width: 63px;
+    height: 63px;
+    border-radius: 50%;
+  }
+}
